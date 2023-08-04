@@ -1,14 +1,14 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-RadialMenu'
-version '1.2.0'
+description 'ESX-RadialMenu'
+version '1.0.0'
 
 ui_page 'html/index.html'
 
 shared_scripts {
     'config.lua',
-    '@qb-core/shared/locale.lua',
+    '@es_extended/imports.lua',
     'locales/en.lua',
     'locales/*.lua'
 }

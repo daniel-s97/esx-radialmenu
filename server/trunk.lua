@@ -1,4 +1,3 @@
-local QBCore = exports['qb-core']:GetCoreObject()
 local trunkBusy = {}
 
 RegisterNetEvent('qb-radialmenu:trunk:server:Door', function(open, plate, door)
@@ -14,7 +13,10 @@ RegisterNetEvent('qb-trunk:server:KidnapTrunk', function(targetId, closestVehicl
 end)
 
 QBCore.Functions.CreateCallback('qb-trunk:server:getTrunkBusy', function(_, cb, plate)
-    if trunkBusy[plate] then cb(true) return end
+    if trunkBusy[plate] then
+        cb(true)
+        return
+    end
     cb(false)
 end)
 
